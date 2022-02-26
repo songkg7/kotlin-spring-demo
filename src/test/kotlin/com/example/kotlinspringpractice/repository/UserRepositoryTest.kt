@@ -1,5 +1,6 @@
 package com.example.kotlinspringpractice.repository
 
+import com.example.kotlinspringpractice.mvc.repository.UserRepository
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

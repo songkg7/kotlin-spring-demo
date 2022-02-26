@@ -1,4 +1,4 @@
-package com.example.kotlinspringpractice.dto
+package com.example.kotlinspringpractice.mvc.dto
 
 import org.hibernate.Hibernate
 import javax.persistence.Entity

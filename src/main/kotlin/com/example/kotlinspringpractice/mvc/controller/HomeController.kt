@@ -1,6 +1,6 @@
-package com.example.kotlinspringpractice.controller
+package com.example.kotlinspringpractice.mvc.controller
 
-import com.example.kotlinspringpractice.dto.Person
+import com.example.kotlinspringpractice.mvc.dto.Person
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping

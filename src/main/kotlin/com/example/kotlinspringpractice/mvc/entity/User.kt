@@ -1,4 +1,4 @@
-package com.example.kotlinspringpractice.entity
+package com.example.kotlinspringpractice.mvc.entity
 
 import java.time.LocalDateTime
 import javax.persistence.Column

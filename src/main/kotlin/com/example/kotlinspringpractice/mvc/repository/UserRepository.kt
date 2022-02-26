@@ -1,6 +1,6 @@
-package com.example.kotlinspringpractice.repository
+package com.example.kotlinspringpractice.mvc.repository
 
-import com.example.kotlinspringpractice.entity.User
+import com.example.kotlinspringpractice.mvc.entity.User
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.transaction.annotation.Transactional
 
