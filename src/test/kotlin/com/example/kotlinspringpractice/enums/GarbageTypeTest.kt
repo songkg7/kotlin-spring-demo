@@ -30,35 +30,10 @@ internal class GarbageTypeTest {
     }
 
     private fun sell(pair: Pair<Int, GarbageType>): Int {
-        // 분해 할당으로 weight 는 20, type GarbageType.PLASTIC 이 할당된다.
         val (weight, type) = pair
 
-        val price = when (type) {
-            GarbageType.PLASTIC -> {
-                when (weight) {
-                    in 0..10 -> 100
-                    in 10..29 -> 150
-                    in 30..Int.MAX_VALUE -> 200
-                    else -> throw IllegalArgumentException()
-                }
-            }
-            GarbageType.GLASS -> {
-                when (weight) {
-                    in 0..10 -> 150
-                    in 10..29 -> 250
-                    in 30..Int.MAX_VALUE -> 300
-                    else -> throw IllegalArgumentException()
-                }
-            }
-            GarbageType.IRON -> {
-                when (weight) {
-                    in 0..10 -> 100
-                    in 10..29 -> 150
-                    in 30..Int.MAX_VALUE -> 200
-                    else -> throw IllegalArgumentException()
-                }
-            }
-        }
+        val price = type.calculate(weight)
+
         return weight * price
     }
 }
