@@ -17,4 +17,16 @@ class StreamTest {
 
         assertThat(filter).hasSize(2)
     }
+
+    @Test
+    internal fun stream_map() {
+        val strings = listOf("madden", "progress", "hat", "rank", "marry")
+
+        val strings1 = strings.filter { it.startsWith("m") }
+            .map { it.uppercase() }
+
+        assertThat(strings1).hasSize(2)
+        assertThat(strings1).element(0).isEqualTo("MADDEN")
+        assertThat(strings1).element(1).isEqualTo("MARRY")
+    }
 }
