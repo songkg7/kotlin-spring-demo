@@ -29,4 +29,13 @@ class StreamTest {
         assertThat(strings1).element(0).isEqualTo("MADDEN")
         assertThat(strings1).element(1).isEqualTo("MARRY")
     }
+
+    @Test
+    internal fun stream_set() {
+        val ints = listOf(1, 1, 2, 3, 4, 5)
+        val intSet = ints.toSet()
+
+        println("intSet = $intSet")
+        assertThat(intSet).hasSize(5)
+    }
 }
