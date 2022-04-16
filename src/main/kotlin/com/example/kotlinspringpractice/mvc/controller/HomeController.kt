@@ -27,4 +27,9 @@ class HomeController {
         return ResponseEntity.ok().body(person)
     }
 
+    @GetMapping("/lambda")
+    fun lambda(): String {
+        return "Hello, lambda!"
+    }
+
 }
